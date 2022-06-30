@@ -1,0 +1,17 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+Textarea{
+	margin: 30px;
+	width: 300px;
+	height: 200px;
+}
+#container, #changeColor {
+	margin: 20px;
+}
+.newStyle{
+	color: palevioletred;
+	font-size: 18px;
+	font-weight: bold;
+}

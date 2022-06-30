@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-width:1000px;
+}
+
+#black-bar {
+	background-color: black; 
+	    color: white;
+	    padding: 20px 0;    
+}
+
+#black-bar a {
+  color: white;
+}
+
+.fixed-container {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#datetime{
+	float: right;
+}
+
+#header{
+height: 100px;
+}
+
+#logo{
+	position: absolute;
+	top: 40px;
+}
+
+#menu-container{
+	height: 70px;
+}
+
+#column-left{
+	width: 300px;
+}
