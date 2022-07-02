@@ -4,19 +4,20 @@ $(function(){
   	'margen-botton': '50px'
   })
   .click(function(){
-  	$('.news-item').first().html('<smll> Мелкий текст</small> ')
-  });
-  /*$('.news-time').click(function(){
-  	$('#column-left').children().css ('border','1px solid red');*/
-  	/*$(this).parents(".news-item").prev().css ('border','1px solid red');*/
-  	/*$(this).parents(".news-item").css ('border','1px solid red');*/
+  $('#column-left h2').remove();
+ /* $('#column-left').prepend('<h2>новий заголовок текста</h2>');
+   $('#column-left').append('<h2>новий заголовок текста</h2>');
+   $('#column-left').prepend(newElement);*/
+   var newElement =$('<h2></h2>');
+  newElement.text('Строчные новости').css('color', 'red');
+  
+  newElement.prependTo($('#column-left'));
 
-  /*.click(function(){
-     $('.news-coments-count').each(function(){
-  	if($(this).text() > 20) {
-  		$(this).css('color','red');
-  	}
+  /*var newElement = document.createElement('h2');
+  newElement.innerHTML = 'New header';
+  newElement.style.color = 'red';
+  var leftColumn = document.getElementByld('column-left');
+  leftColumn.insertBefore(newElement, leftColumn.firstChild);*/
   });
-   */
     
 });
