@@ -4,6 +4,19 @@ $(function(){
   	'margen-botton': '50px'
   })
   .click(function(){
-     $('.news-time').css('color', 'red');
+  	$('.news-item').first().html('<smll> Мелкий текст</small> ')
   });
+  /*$('.news-time').click(function(){
+  	$('#column-left').children().css ('border','1px solid red');*/
+  	/*$(this).parents(".news-item").prev().css ('border','1px solid red');*/
+  	/*$(this).parents(".news-item").css ('border','1px solid red');*/
+
+  /*.click(function(){
+     $('.news-coments-count').each(function(){
+  	if($(this).text() > 20) {
+  		$(this).css('color','red');
+  	}
+  });
+   */
+    
 });
