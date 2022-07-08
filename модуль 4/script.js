@@ -3,10 +3,10 @@ $(function(){
 	{
 		$('#container').toggleClass('newStyle');
 	}
-	$('#changeColor, Textarea').on ('focus', function(){
+	$('#changeColor, '#list-one).on ('focus', function(){
     $(this).css('background-color', 'pink');
 	});
-	$('Textarea').on ('blur', function(){
+	$('#list-one').on ('blur', function(){
     $(this).css('background-color', 'write');
 	});
 });
