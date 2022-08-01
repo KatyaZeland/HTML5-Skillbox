@@ -1,0 +1,26 @@
+package com.javarush.task.jdk13.task07.task0704;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+/* 
+Массив из чисел в обратном порядке
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        //напишите тут ваш код
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+      int[] numbers = new int[10];
+      
+      for (int i=0; i<10; i++)
+      {
+        String s =bufferedReader.readLine();
+        int num = Integer.parseInt(s);
+        numbers[i]=num;
+      }
+       for (int i=numbers.length-1; i>=0; --i)
+       System.out.println(numbers[i]);
+    }
+}
+
